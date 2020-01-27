@@ -24,7 +24,7 @@ CMD ["/sbin/my_init"]
 ##    REPOSITORIES AND DEPENDENCIES    ##
 #########################################
 
-RUN add-apt-repository ppa:nilarimogard/webupd8
+#RUN add-apt-repository ppa:nilarimogard/webupd8
 RUN apt-get update
 
 # Install packages needed for app
@@ -34,7 +34,7 @@ RUN apt-get update
 #########################################
 
 # Install steps for X app
-RUN apt-get -yy install browser-plugin-freshplayer-pepperflash firefox
+RUN apt-get -yy firefox
 # Copy X app start script to right location
 COPY startapp.sh /startapp.sh
 

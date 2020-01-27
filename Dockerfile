@@ -34,7 +34,7 @@ RUN apt-get update
 #########################################
 
 # Install steps for X app
-RUN apt-get -yy firefox
+RUN apt-get -y firefox
 # Copy X app start script to right location
 COPY startapp.sh /startapp.sh
 
